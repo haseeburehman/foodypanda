@@ -1,0 +1,32 @@
+.img1{
+    height: 120px;
+    width: 190px;
+    margin-top: -23px;
+    }
+    div.sticky{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+        display: flex;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+        margin-top: -15px;
+        background-color: rgb(254, 254, 254);
+        height: 65px;
+        margin-left: -10px;
+        margin-right: -8px;
+    }
+    .b1{
+        background-color: white;
+        margin-left: 940px;
+        margin-top: 10px;
+        border: 0px ;
+    }
+    .btn{
+        border-left: solid rgb(220, 220, 220);
+        border-right: solid rgb(220, 220, 220);
+    }
+    .b1:hover{
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+   

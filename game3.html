@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background-image: linear-gradient(to right, red , blue);">
+    <div id="message">where do you want to eat?</div>
+    <div>
+      <input type="text" id="addItem" />
+      <input type="button" id="addNew" value="Add to List" />
+    </div>
+    <div id="output">
+      <h1>List</h1>
+      <ol id="sList"></ol>
+    </div>
+    <script>
+      document.getElementById("addNew").onclick = function () {
+        addOne();
+      };
+      function addOne() {
+        var a = document.getElementById("addItem").value;
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(a));
+        document.getElementById("sList").appendChild(li);
+      }
+    </script>
+
+<title>Example of a blinking text using CSS within a marquee</title>
+<style>
+    .blink {
+        animation: blinker 1.5s linear infinite;
+        color: red;
+        font-family: sans-serif;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+
+<body>
+<marquee class="blink"><img style="height: 200px; width: 1000px;" src="new foodpanda.png" alt=""></marquee>
+</body>
+</body>
+</html>

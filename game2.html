@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background-image: linear-gradient(to left, pink,yellow,red,blue,grey,silver ,black, rgb(93, 218, 252));">
+    <div>
+        <p style="color: aliceblue;" >Drag the foodpanda image into the rectangle:</p>
+        <div id="div1" style=" width: 350px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+            <script>
+                function allowDrop(ev) {
+                  ev.preventDefault();
+                }
+                
+                function drag(ev) {
+                  ev.dataTransfer.setData("text", ev.target.id);
+                }
+                
+                function drop(ev) {
+                  ev.preventDefault();
+                  var data = ev.dataTransfer.getData("text");
+                  ev.target.appendChild(document.getElementById(data));
+                }
+                </script>
+                </head>
+                <img id="drag1" src="Foodpanda-Logo.wine - Copy.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                </div>   
+</body>
+</html>

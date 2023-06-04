@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        width: 900px;
+        height: 97px;
+        background: red;
+        position: relative;
+        animation: myfirst 10s 100;
+        animation-direction:reverse;
+      }
+      
+      @keyframes myfirst {
+        0%   {background: red; left: 0px; top: 0px;}
+        25%  {background: yellow; left: 200px; top: 0px;}
+        50%  {background: blue; left: 200px; top: 200px;}
+        75%  {background: green; left: 0px; top: 200px;}
+        100% {background: red; left: 0px; top: 0px;}
+      }
+      </style>
+</head>
+<body>
+    <div>   
+        <button onclick="document.getElementById('myImage').src='new foodpanda.png'">Turn on the foodpanda</button>
+    <img  id="myImage"  src="Foodpanda-Logo.wine - Copy.png" style="width:500px">
+    <button onclick="document.getElementById('myImage').src='Foodpanda-Logo.wine - Copy.png'">Turn off the foodpanda</button>
+    </div>
+    <div></div>
+    <body>
+        <marquee style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: xx-large;" class="blink">catch and play with foodpanda</marquee>
+        </body>
+</body>
+</html>
